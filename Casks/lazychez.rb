@@ -3,7 +3,7 @@ cask "lazychez" do
   name "lazychez"
   desc "A terminal UI for managing chezmoi dotfiles with integrated git operations"
   homepage "https://github.com/nickrotondo/lazychez"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "lazychez" do
   on_macos do
     on_intel do
       url "https://github.com/nickrotondo/lazychez/releases/download/v#{version}/lazychez_darwin_amd64.tar.gz"
-      sha256 "88770f7a674f65924adc79cd353b79cc8673682365e9d9059095a10492e64a91"
+      sha256 "72d12099a5533b50466d29c4ea1be978df4e772ad44e8efd22b06b9781db3d41"
     end
     on_arm do
       url "https://github.com/nickrotondo/lazychez/releases/download/v#{version}/lazychez_darwin_arm64.tar.gz"
-      sha256 "fd9dbb0518e221969afd3cd8fbdf64f06f667f8836fc9c513be5b6a191689cd5"
+      sha256 "9d49a7e84bbaaef2a41f804c1b2af5e4059d85f3d565dbce58c263f135fcd5e5"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/nickrotondo/lazychez/releases/download/v#{version}/lazychez_linux_amd64.tar.gz"
-      sha256 "0809a42a0116dcd7233900046dce6a895254b109be52e279bbbfc258e4b27af0"
+      sha256 "3ff929e33fb531b2394818e9fc7c665c1e269f00b4153a130ec238eecd21a1a3"
     end
     on_arm do
       url "https://github.com/nickrotondo/lazychez/releases/download/v#{version}/lazychez_linux_arm64.tar.gz"
-      sha256 "4b8d17b42ae1aa3241691f51ea844f2595fd0f7220e834ba19113509a319c5a5"
+      sha256 "f7553eb4c77bd0377170d3139843441c5743b5d2bf9a023df181084a26bcb18a"
     end
   end
 
