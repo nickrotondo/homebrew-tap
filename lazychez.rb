@@ -5,20 +5,20 @@
 class Lazychez < Formula
   desc "A terminal UI for managing chezmoi dotfiles with integrated git operations"
   homepage "https://github.com/nickrotondo/lazychez"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nickrotondo/lazychez/releases/download/v0.6.0/lazychez_darwin_amd64.tar.gz"
-      sha256 "373b6d39f6a1606c17e72e6a7f7e448d2b56cf123ab6cb362ff1c349c8a6637d"
+      url "https://github.com/nickrotondo/lazychez/releases/download/v0.7.0/lazychez_darwin_amd64.tar.gz"
+      sha256 "ddb8f77724151cfd6171b36bb34d96d350fe08b34711d757d2ae2e645d214952"
 
       define_method(:install) do
         bin.install "lazychez"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nickrotondo/lazychez/releases/download/v0.6.0/lazychez_darwin_arm64.tar.gz"
-      sha256 "19de57f932d7f25a45ba790da39b2caaa470c947975c05d1fe0ddfc4a2552873"
+      url "https://github.com/nickrotondo/lazychez/releases/download/v0.7.0/lazychez_darwin_arm64.tar.gz"
+      sha256 "79cd359be73c2b109997812336440a7c1f7b7a57e7f426c1a2685da3dcb452af"
 
       define_method(:install) do
         bin.install "lazychez"
@@ -28,15 +28,15 @@ class Lazychez < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nickrotondo/lazychez/releases/download/v0.6.0/lazychez_linux_amd64.tar.gz"
-      sha256 "6b10042852e95a312a1f8b5c82b422d5b8336e5f52e76124e77d27e49e900f8c"
+      url "https://github.com/nickrotondo/lazychez/releases/download/v0.7.0/lazychez_linux_amd64.tar.gz"
+      sha256 "ad02807c060d16ac1b962a50b2932d95b86ccdf6d492d3350b41ddd1355a1b09"
       define_method(:install) do
         bin.install "lazychez"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nickrotondo/lazychez/releases/download/v0.6.0/lazychez_linux_arm64.tar.gz"
-      sha256 "2295ca26ee914197822d96c549ef94bc1935a1fc2d1c420b20e4d01e8213c28c"
+      url "https://github.com/nickrotondo/lazychez/releases/download/v0.7.0/lazychez_linux_arm64.tar.gz"
+      sha256 "d1df86e0ccb2a62484c8656248a1cc87482aeb126fcef1fa0c26dfdd2c167397"
       define_method(:install) do
         bin.install "lazychez"
       end
